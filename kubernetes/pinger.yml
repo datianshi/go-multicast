@@ -1,0 +1,17 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: pinger
+  namespace: multicast
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: pinger
+        tier: multicast
+    spec:
+      containers:
+      - name: pinger
+        image: datianshi/multicast-pinger

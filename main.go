@@ -10,7 +10,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/dmichael/go-multicast/multicast"
+	"github.com/datianshi/go-multicast/multicast"
 )
 
 const (

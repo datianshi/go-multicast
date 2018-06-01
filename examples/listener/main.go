@@ -8,7 +8,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/dmichael/go-multicast/multicast"
+	"github.com/datianshi/go-multicast/multicast"
 	"github.com/urfave/cli"
 )
 

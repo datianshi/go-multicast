@@ -1,0 +1,17 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: listener
+  namespace: multicast
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: listener
+        tier: multicast
+    spec:
+      containers:
+      - name: listener
+        image: datianshi/multicast-listener

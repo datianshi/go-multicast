@@ -1,0 +1,6 @@
+FROM    ubuntu:16.04
+MAINTAINER Shaozhen Ding "dsz0111@gmail.com"
+
+ADD examples/pinger/pinger ./
+ENTRYPOINT ./pinger "$ADDRESS"
+
